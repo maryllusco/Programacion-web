@@ -18,6 +18,9 @@ p {
     color:bisque;
 }
 
+img{
+    width: 30%;
+}
 .contenedor{
     color:blue; /*modifica el color de la letra*/
     background-color:beige; /*color de fondo*/
