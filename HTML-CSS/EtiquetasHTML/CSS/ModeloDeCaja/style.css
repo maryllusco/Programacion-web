@@ -1,40 +1,35 @@
-.bloque {
-  display: block;
-  width: 200px;
-  background-color: chocolate;
-  padding: 10px;
-  margin: 10px 0;
+/*Ejercicio 1*/
+.contenedor {
+  background-color: rgb(230, 104, 104); /*color del fondo*/
+  width: 100%; /*el tamaño del ancho*/
+  height: 100%; /*el tamaño del largo*/
+  display: flex; /**/
+  justify-content: center; /*Eje X*/
+  align-items: center; /*Eje Y*/
+  height: 100vh; /*vh fuerza que elo 100% de cualquier pantalla que tengas se complete*/
 }
 
-.en-linea {
-  display: inline;
-  background-color: coral;
-  padding: 5px;
-  margin: 5px;
-  width: 100px;
-  height: 50px;
+.texto {
+  margin: 60px; /*tamaño del contenedor bebe respecto al grande*/
+  display: flex; /**/
+  color: rgb(247, 253, 254); /*modifica el color de la letra*/
+  font-size: 20px; /*tamaño de la letra*/
+  font-family: Arial, Helvetica, sans-serif; /*tipografia*/
+  text-align: center; /*alineacion de texto*/
+  justify-content: center; /*para que este centrado*/
+  background-color: rgb(248, 152, 152); /*color del contenedor chiquito*/
+  flex-direction: column; /*sigue la direccion que tengamos*/
 }
 
-li {
-  display: inline-block;
-  width: 150px;
-  height: 50px;
-  line-height: 50px;
-  text-align: center;
-  background-color: darksalmon;
-  padding: 10px;
-  margin: 10px 0;
+.input {
+  margin: 5px; /* distancia entre los input osea los contenedores para escribir*/
+  height: 40px; /*tamaño del teaxterra, es en donde colocamos el usuario*/
+  border-radius: 5px; /*redondea los bordes*/
 }
 
-.flex-container {
-  display: flex;
-  background-color: darkkhaki;
-  padding: 20px;
-  height: 200px;
-}
-.flex-item {
-  display: flex;
-  background-color: darkseagreen;
-  width: 100px;
-  height: 100px;
+.submit {
+  margin: 8px;
+  width: 350px; /*LARGO DEL ENVIAR*/
+  border-radius: 5px;
+  height: 40px; /*ANCHO DEL ENVIAR*/
 }
