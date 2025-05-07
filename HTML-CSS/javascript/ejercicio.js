@@ -44,3 +44,32 @@ for (let i=0;i <numbers.length;i++){
 console.log("La suma de todos los numeros multiplos de 3 son", sum)
 
 
+//ejercicio tienda de productos 07/05
+const inventario = []; 
+const producto1 = {nombre: "Auriculares", precio: 1500, categoria: "Electrónica" 
+};
+const producto2 = {nombre: "Computadora", precio: 3000, categoria: "Electrónica"
+};
+const producto3 = {nombre: "Celular", precio: 5000, categoria: "Electrónica"
+};
+const producto4 = {nombre: "Termo", precio: 2000, categoria: "Cocina"
+};
+inventario.push(producto1, producto2, producto3, producto4 );
+inventario.forEach((item) =>{
+    console.log("producto:", item);
+});
+                                                        
+const Electronica = inventario.filter((item) => item.categoria === "Electrónica");
+console.log(Electronica);
+
+const sacar = inventario.map((item) => {
+    return(item.nombre);
+});
+console.log("nombres:", sacar)
+
+//ejercicio listas de pelicula
+const peliculas = [];
+const pelicula1 = {titulo: "Cars", director: "John Lasseter", año: "2006", genero: "infantil"};
+const pelicuala2 = {titulo: "Cartas a Julieta", director: " Gary Winick", año: "2019", genero: "romantica"};
+const pelicuala3 = {titulo: "Spiderman", director: "maparipi", año: "2016", genero: "accion"};
+
