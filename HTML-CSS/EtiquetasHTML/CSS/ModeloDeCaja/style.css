@@ -1,6 +1,6 @@
 /*Ejercicio 1*/
 .contenedor {
-  background-color: rgb(230, 104, 104); /*color del fondo*/
+  background-color: rgb(104, 133, 230); /*color del fondo*/
   width: 100%; /*el tamaño del ancho*/
   height: 100%; /*el tamaño del largo*/
   display: flex; /**/
@@ -17,7 +17,7 @@
   font-family: Arial, Helvetica, sans-serif; /*tipografia*/
   text-align: center; /*alineacion de texto*/
   justify-content: center; /*para que este centrado*/
-  background-color: rgb(248, 152, 152); /*color del contenedor chiquito*/
+  background-color: rgb(162, 152, 248); /*color del contenedor chiquito*/
   flex-direction: column; /*sigue la direccion que tengamos*/
 }
 
