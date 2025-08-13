@@ -1,5 +1,7 @@
 import { useState } from "react";
 import "./App.css";
+import { Hijo1 } from "./components/hijo1";
+import { Hijo2 } from "./components/hijo2";
 function App() {
   const [nombre, setNombre] = useState("");
   const handleClick =() =>{
@@ -17,6 +19,7 @@ function App() {
   <button onClick={handleClick}>Mostrar</button>
   {nombre && <h2>{nombre}</h2>}
   {nombre === "" ? <>hola </> : <>chau</>}
+  <Hijo1 nombre = "Ada"/>
     </>);
 }
 
