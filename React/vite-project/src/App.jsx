@@ -1,26 +1,35 @@
-import { useState } from "react";
-import "./App.css";
-import { Hijo1 } from "./components/hijo1";
-import { Hijo2 } from "./components/hijo2";
-function App() {
-  const [nombre, setNombre] = useState("");
-  const handleClick =() =>{
-    console.log('hola')
-  };
-  const handleInputChange = (event) => {
-    setNombre(event.target.value);
-  }
-  return (<>
-  <input type="text" placeholder="Escribi tu nombre"
-  onChange={handleInputChange}
-  value={nombre} 
-  />
+import { useState } from 'react'
+import reactLogo from './assets/react.svg'
+import viteLogo from '/vite.svg'
+import './App.css'
 
-  <button onClick={handleClick}>Mostrar</button>
-  {nombre && <h2>{nombre}</h2>}
-  {nombre === "" ? <>hola </> : <>chau</>}
-  <Hijo1 nombre = "Ada"/>
-    </>);
+function App() {
+  const [count, setCount] = useState(0)
+
+  return (
+    <>
+      <div>
+        <a href="https://vite.dev" target="_blank">
+          <img src={viteLogo} className="logo" alt="Vite logo" />
+        </a>
+        <a href="https://react.dev" target="_blank">
+          <img src={reactLogo} className="logo react" alt="React logo" />
+        </a>
+      </div>
+      <h1>Vite + React</h1>
+      <div className="card">
+        <button onClick={() => setCount((count) => count + 1)}>
+          count is {count}
+        </button>
+        <p>
+          Edit <code>src/App.jsx</code> and save to test HMR
+        </p>
+      </div>
+      <p className="read-the-docs">
+        Click on the Vite and React logos to learn more
+      </p>
+    </>
+  )
 }
 
-export default App;
+export default App

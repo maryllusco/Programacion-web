@@ -8,16 +8,25 @@ function App() {
   // Agregar números consecutivos 3 puntitos
   function myFuction() {
     const ultimo = num[num.length - 1]
-    setNum([...num, ultimo + 1])
+    setNum([...num, ultimo + 1]) //toma el ultimo numero y lo suma 
   }
 
   // Agregar propiedad nacionalidad 4 puntitos
-  function personaFun() {
+  function personaFun() { //creamos un nuevo objeto
     const nPersona = {
       ...persona,
       nacionalidad: "Argentina"
     }
     setPersona(nPersona)
+  }
+
+  function cambiarNombre (){ //en duda
+    const nuevaPersona = {
+      ...Persona, 
+      nombre: "Axel" 
+
+    } 
+    setPersona (nuevaPersona)
   }
 
   return (
@@ -36,6 +45,7 @@ function App() {
         <p>Edad: {persona.edad}</p>
         <p>Nacionalidad: {persona.nacionalidad}</p>
         <button onClick={personaFun}>Agregar propiedad</button>
+        <button onClick={cambiarNombre}>Cambiar Nombre</button> 
       </div>
     </>
   )
